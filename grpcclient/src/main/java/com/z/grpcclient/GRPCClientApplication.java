@@ -47,15 +47,17 @@ class HelloService {
 	private final HelloServiceGrpc.HelloServiceBlockingStub helloServiceBlockingStub;
 
 	HelloDTOResponse hello(String firstName, String lastName) {
-		var helloResponse = helloServiceBlockingStub.hello(
-				HelloRequest
-						.newBuilder()
-						.setFirstName(firstName)
-						.setLastName(lastName)
-						.build()
-		);
+		var helloResponse = helloServiceBlockingStub.hello(buildRequest(firstName, lastName));
 
 		return new HelloDTOResponse(helloResponse.getGreeting());
+	}
+
+	HelloRequest buildRequest(String firstName, String lastName) {
+		return HelloRequest
+				.newBuilder()
+				.setFirstName(firstName)
+				.setLastName(lastName)
+				.build();
 	}
 }
 
