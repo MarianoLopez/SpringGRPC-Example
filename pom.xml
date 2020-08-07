@@ -10,6 +10,7 @@
   <modules>
     <module>grpcserver</module>
     <module>grpcclient</module>
+    <module>protos</module>
   </modules>
   
 </project>
