@@ -14,7 +14,7 @@ This is a [GRPC](https://grpc.io/) example project with spring boot
     * Framework: `Springboot 2.3.2.RELEASE`
     * Uses:
         * `io.grpc libraries`           
-#How to run
+# How to run
 * Requirements:
     * JDK 11
     * Maven 3
