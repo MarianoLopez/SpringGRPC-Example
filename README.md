@@ -1,4 +1,4 @@
-# SpringCloud
+# GRPC-Spring
 This is a [GRPC](https://grpc.io/) example project with spring boot
 
 # Artifacts    
